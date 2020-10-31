@@ -1,0 +1,29 @@
+.innerContent{
+	display: flex;
+	text-align: center;
+	margin-right: 1%;
+}
+
+#github{
+	width: 28%;
+}
+
+#resume{
+	width: 28%;
+}
+
+#linkedin{
+	width: 28%;
+}
+
+.extrasIcon{
+	padding: 2% 0;
+}
+
+#linkedin{
+	margin-left: 11%;
+}
+
+#github{
+	margin: 0% -2%;
+}

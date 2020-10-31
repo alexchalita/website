@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Éducation</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/education.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <button class="openbtn" id="openBtn" onclick="openNav()">&#9776;</button>
+
+        <div id="navBarDiv" class="navBar" style="display: none;">
+            <a class="navItem" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="navItem" href="aboutMefr.html">À propos de moi</a>
+            <a class="navItem" href="educationfr.html" style="color: gray">Éducation</a>
+            <a class="navItem" href="experiencefr.html">Éxperiences</a>
+            <a class="navItem" href="extrasfr.html">Supplémentaire</a>
+        </div>
+
+        <a class="languageBtn" id="enButton" href="education.html">En</a>
+
+        <div class="pageTitleDiv">
+            <p id="pageTitle">Éducation</p>
+        </div>
+
+        <div class="innerContent">
+                <a><img src="../assets/lfigp.png" id="lfigpAsset" onclick="openLfigp()"></a>
+                <a><img src="../assets/uoftlogo.jpg" id="uoftAsset" onclick="openUoft()"></a>
+        </div> 
+
+        <div class="educationPop" id="lfigpPop" style="display: none;">
+            <p class="popText">Je suis allé au Lycée Français International Georges Pompidou à Dubaï ou j'ai choisi de faire la specialization dans les sciences. J'ai eu le plaisir d'apprendre quatre langues et d'avoir accumulé les habitudes d'études qui m'ont aidé à ma poursuite de mon bachelor's.</p>
+        </div>
+
+        <div class="educationPop" id="uoftPop" style="display: none;">
+            <p class="popText">J'ai commencé mes études secondaires à l'Université de Toronto en 2017. Après avoir pris beaucoup de cours, j'ai aimé plutôt les cours de computer science non theorique et j'ai trouver une affinité pour l'économie, ou j'ai choisi de faire un "Minor".</p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function openNav(){
+            if (window.matchMedia("(max-width: 670px)").matches){
+                document.getElementById("navBarDiv").style.display = "block";
+                var list_items = document.getElementsByClassName("navItem");
+                for (i = 0; i < list_items.length; i++){
+                    list_items[i].style.display = "block";
+                }
+                document.getElementById("openBtn").style.display = "none";
+            }
+            else{
+                document.getElementById("navBarDiv").style.display = "block";
+                document.getElementById("openBtn").style.display = "none";
+            }
+
+        }
+
+        function closeNav(){
+            document.getElementById("navBarDiv").style.display = "none";
+            document.getElementById("openBtn").style.display = "block";
+        }
+
+        function openLfigp(){
+            document.getElementById("uoftPop").style.display = "none";
+            document.getElementById("lfigpPop").style.display = "block";
+        }
+
+        function openUoft(){
+            document.getElementById("lfigpPop").style.display = "none";
+            document.getElementById("uoftPop").style.display = "block";
+        }
+    </script>
+</body>
+</html>

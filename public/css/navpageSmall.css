@@ -1,0 +1,33 @@
+body{
+    font-family: "Lucida Console", "Monaco", monospace;
+    font-size: 150%;
+}
+
+#navigationList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navigationList li{
+    padding-bottom: 9%;
+}
+
+#navigationList li>a{
+    text-decoration: none;
+    color: black;
+}
+
+#wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#navDiv{
+    width: 100%;
+    margin: 0 auto;
+}
+
+#navigationList li>a:hover{color: gray};
+#navigationList li>a:visited{color: black};

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/experience.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <button class="openbtn" id="openBtn" onclick="openNav()">&#9776;</button>
+
+        <div id="navBarDiv" class="navBar" style="display: none;">
+            <a class="navItem" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="navItem" href="aboutMe.html">About Me</a>
+            <a class="navItem" href="education.html">Education</a>
+            <a class="navItem" href="experience.html" style="color: gray">Experience</a>
+            <a class="navItem" href="extras.html">Extras</a>
+        </div>
+
+        <a class="languageBtn" id="frButton" href="experiencefr.html">Fr</a>
+
+        <div class="pageTitleDiv">
+            <p id="pageTitle">Experience</p>
+        </div>
+
+        <div class="innerContent">
+            <div class="job-infoBox" id="infoBox-1">
+                <p class="job-infoBox-Heading" id="heading-1">Canada's Wonderland</p>
+                <img src="../assets/cw.png" alt="Canada's Wonderland" id="cw">
+                <p class="job-infoBox-Date" id="date-1"><strong>From:&nbsp</strong>Summer 2018</p>
+                <p class="job-infoBox-Title" id="title-1"><strong>Position:&nbsp</strong>Lifeguard</p>
+                <p class="job-infoBox-Description" id="description-1"><strong>Role and Responsibilties:</strong><br>
+                    <ul class="descriptionContent">
+                        <li>I acquired team building skills and I learned the importance of communication and teammwork with my peers and my crew</li>
+                        <li>Got a deeper understanding of customer satisfaction through one on one customer service/interaction</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="job-infoBox" id="infoBox-2">
+                <p class="job-infoBox-Heading" id="heading-2">Legislative Assembly of Ontario</p>
+                <img src="../assets/lao.png" alt="Legislative Assembly of Ontario" id="lao">
+                <p class="job-infoBox-Date" id="date-2"><strong>From:&nbsp</strong>Summer 2019</p>
+                <p class="job-infoBox-Title" id="title-2"><strong>Position:&nbsp</strong>Software QA Engineer</p>
+                <p class="job-infoBox-Description" id="description-2"><strong>Role and Responsibilties:</strong><br>
+                    <ul class="descriptionContent">
+                        <li>Wrote automated test scripts using Selenium with Java and Python integration to make deployment testing easier</li>
+                        <li>Implemented first ever load testing procedure using JMeter in modernization project</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="job-infoBox" id="infoBox-3">
+                <p class="job-infoBox-Heading" id="heading-3">RP4K</p>
+                <img src="../assets/rp4k.jpg" alt="Real Programming For Kids" id="rp4k">
+                <p class="job-infoBox-Date" id="date-3"><strong>From:&nbsp</strong>2018 - 2019</p>
+                <p class="job-infoBox-Title" id="title-3"><strong>Position:&nbsp</strong>Computer Science Teacher</p>
+                <p class="job-infoBox-Description" id="description-3"><strong>Role and Responsibilties:</strong><br>
+                    <ul class="descriptionContent">
+                        <li>Taught small to medium classes how to code in different languages in a video game environment</li>
+                        <li>Had student of the of 6 all the way to 17</li>
+                        <li>Was mainly responsible to teach in Java, C# and Python</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="job-infoBox" id="infoBox-4">
+                <p class="job-infoBox-Heading" id="heading-4">TD</p>
+                <img src="../assets/td.png" alt="TD" id="td">
+                <p class="job-infoBox-Date" id="date-4"><strong>From:&nbsp</strong>2020 - 2021</p>
+                <p class="job-infoBox-Title" id="title-4"><strong>Position:&nbsp</strong>Automation Developer</p>
+                <p class="job-infoBox-Description" id="description-4"><strong>Role and Responsibilties:</strong><br>
+                    <ul class="descriptionContent">
+                        <li>Writing scripts to validate API outputs, and automate responses and requests, using Java and SQL</li>
+                        <li>Wrote automated scripts to cover all input combinations</li>
+                        <li>Larned the difference in development in a corportate environment and the importance of communcating with all kinds of teams</li>
+                    </ul>
+                </p>
+            </div>
+
+
+            <div class="job-infoBox" id="infoBox-5">
+                <p class="job-infoBox-Heading" id="heading-5">247Studios</p>
+                <img src="../assets/247logo.png" alt="247studios" id="studios">
+                <p class="job-infoBox-Date" id="date-5"><strong>From:&nbsp</strong>2020 - 2021</p>
+                <p class="job-infoBox-Title" id="title-5"><strong>Position:&nbsp</strong>Software Engineer</p>
+                <p class="job-infoBox-Description" id="description-5"><strong>Role and Responsibilties:</strong><br>
+                    <ul class="descriptionContent">
+                        <li>Working with high-level clients to further develop their developmental needs</li>
+                        <li>Used AWS for deployment, learned how to access VMs and manage virtual instances</li>
+                        <li><strong>Front-End:&nbsp</strong>HTML, CSS, JavaScript, jQuery</li>
+                        <li><strong>Back-End:&nbsp</strong>MySQL, PHP, NodeJS</li>
+                        <li><strong>DevOps:&nbsp</strong>AWS, Docker</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function openNav(){
+            if (window.matchMedia("(max-width: 670px)").matches){
+                document.getElementById("navBarDiv").style.display = "block";
+                var list_items = document.getElementsByClassName("navItem");
+                for (i = 0; i < list_items.length; i++){
+                    list_items[i].style.display = "block";
+                }
+                document.getElementById("openBtn").style.display = "none";
+            }
+            else{
+                document.getElementById("navBarDiv").style.display = "block";
+                document.getElementById("openBtn").style.display = "none";
+            }
+
+        }
+
+        function closeNav(){
+            document.getElementById("navBarDiv").style.display = "none";
+            document.getElementById("openBtn").style.display = "block";
+        }
+    </script>
+</body>
+</html>

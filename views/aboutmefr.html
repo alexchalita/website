@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>À propos de moi</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/aboutMe.css">
+</head>
+<body>
+
+    <div id="wrapper">
+    	
+    	<button class="openbtn" id="openBtn" onclick="openNav()">&#9776;</button>
+
+	    <div id="navBarDiv" class="navBar" style="display: none;">
+			<a class="navItem" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a class="navItem" href="aboutMefr.html" style="color: gray">À propos de moi</a>
+			<a class="navItem" href="educationfr.html">Éducation</a>
+			<a class="navItem" href="experiencefr.html">Éxperiences</a>
+			<a class="navItem" href="extrasfr.html">Supplémentaire</a>
+		</div>
+
+		<a class="languageBtn" id="enButton" href="aboutme.html">En</a>
+
+		<div class="pageTitleDiv">
+			<p id="pageTitle">À propos de moi</p>
+		</div>
+
+		<div class="innerContent" id="imageSide">
+			<img src="../assets/aboutMe.jpg" id="aboutMeAsset">
+			
+			<div id="textSide">
+				<ul id="aboutMeList">
+					<li class="ab-listItem">Je m'appelle Alex Chalita, je suis Libanais d'origine mais maintenant, j'habite à Toronto. J'ai commence mon éducation secondaire a l'université en "Computer Science", sans savoir si j'allais aimer... a ce que j'ai pris mon premier cour de développement web.</li>
+					<li class="ab-listItem">J'adore le sport, surtout le tennis and le basket-ball. J'ai joué tennis pour l'équipe de mon Lycée et maintenant je pratique pour rejoindre l'équipe de basket universitaire..</li>
+					<li class="ab-listItem">Quelque chose que je crois fortement aujourd'hui c'est que le codage c'est comme un puzzle. Chaque langue de codage a ses règles, et quand on les apprend, on peut construire des choses magnifiques!</li>
+				</ul>
+			</div>
+		</div>
+
+
+    </div> 
+    <script type="text/javascript">
+    	function openNav(){
+    		if (window.matchMedia("(max-width: 670px)").matches){
+    			document.getElementById("navBarDiv").style.display = "block";
+    			var list_items = document.getElementsByClassName("navItem");
+    			for (i = 0; i < list_items.length; i++){
+    				list_items[i].style.display = "block";
+    			}
+    			document.getElementById("openBtn").style.display = "none";
+    		}
+    		else{
+    			document.getElementById("navBarDiv").style.display = "block";
+    			document.getElementById("openBtn").style.display = "none";
+    		}
+
+    	}
+
+    	function closeNav(){
+    		document.getElementById("navBarDiv").style.display = "none";
+    		document.getElementById("openBtn").style.display = "block";
+    	}
+    </script>
+</body>
+</html>

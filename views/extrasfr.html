@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Supplémentaire</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/extras.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <button class="openbtn" id="openBtn" onclick="openNav()">&#9776;</button>
+
+        <div id="navBarDiv" class="navBar" style="display: none;">
+            <a class="navItem" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="navItem" href="aboutMefr.html">À propos de moi</a>
+            <a class="navItem" href="educationfr.html">Éducation</a>
+            <a class="navItem" href="experiencefr.html">Éxperiences</a>
+            <a class="navItem" href="extrasfr.html" style="color: gray">Supplémentaire</a>
+        </div>
+
+        <a class="languageBtn" id="enButton" href="extras.html">En</a>
+
+        <div class="pageTitleDiv">
+            <p id="pageTitle">Supplémentaire</p>
+        </div>
+
+        <div class="innerContent" id="imageSide">
+            <div class="extrasIcon" id="linkedin">
+                <a href="https://www.linkedin.com/in/alexchalita/" target="_blank">
+                    <img src="../assets/linkedin.png" id="linkedin" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="extrasIcon" id="github">
+                <a href="https://github.com/alexchalita" target="_blank">
+                    <img src="../assets/github.png" id="github" alt="GitHub">
+                </a>
+            </div>
+                
+            <div class="extrasIcon" id="resume">
+                <a href="../downloadable/AlexChalita.pdf" target="_blank">
+                    <img src="../assets/resume.png" id="resume" alt="Resume">
+                </a>
+            </div>
+        </div> 
+    </div>
+
+    <script type="text/javascript">
+        function openNav(){
+            if (window.matchMedia("(max-width: 670px)").matches){
+                document.getElementById("navBarDiv").style.display = "block";
+                var list_items = document.getElementsByClassName("navItem");
+                for (i = 0; i < list_items.length; i++){
+                    list_items[i].style.display = "block";
+                }
+                document.getElementById("openBtn").style.display = "none";
+            }
+            else{
+                document.getElementById("navBarDiv").style.display = "block";
+                document.getElementById("openBtn").style.display = "none";
+            }
+
+        }
+
+        function closeNav(){
+            document.getElementById("navBarDiv").style.display = "none";
+            document.getElementById("openBtn").style.display = "block";
+        }
+    </script>
+</body>
+</html>

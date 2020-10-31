@@ -1,0 +1,16 @@
+@media screen and (min-width: 1800px){
+	#td {
+	    width: 32%;
+	    margin: 0% 0px 0% 34%;
+	}
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+	#td{
+		padding: 0%;
+	}
+
+	#lao {
+    	padding: 0%;
+	}
+}

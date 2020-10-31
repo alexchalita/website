@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../public/css/education.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <button class="openbtn" id="openBtn" onclick="openNav()">&#9776;</button>
+
+        <div id="navBarDiv" class="navBar" style="display: none;">
+            <a class="navItem" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="navItem" href="aboutMe.html">About Me</a>
+            <a class="navItem" href="education.html" style="color: gray">Education</a>
+            <a class="navItem" href="experience.html">Experience</a>
+            <a class="navItem" href="extras.html">Extras</a>
+        </div>
+
+        <a class="languageBtn" id="frButton" href="educationfr.html">Fr</a>
+
+        <div class="pageTitleDiv">
+            <p id="pageTitle">Education</p>
+        </div>
+
+        <div class="innerContent">
+                <a><img src="../assets/lfigp.png" id="lfigpAsset" onclick="openLfigp()"></a>
+                <a><img src="../assets/uoftlogo.jpg" id="uoftAsset" onclick="openUoft()"></a>
+        </div> 
+
+        <div class="educationPop" id="lfigpPop" style="display: none;">
+            <p class="popText">I attended LFIGP (Lycée Français International Georges Pompidou) in Dubai where I specialized in the Scientific sector. I had the pleasure of learning four languages and picking up important study habits that would go on to help me in my pursuit for a Bachelor's degree.</p>
+        </div>
+
+        <div class="educationPop" id="uoftPop" style="display: none;">
+            <p class="popText">I started my post-secondary education at the University of Toronto in 2017. After taking a multitude of courses, I thoroughly enjoyed the non-theoretical Computer Science courses and I found an affinity for economics, where I decided to minor.</p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function openNav(){
+            if (window.matchMedia("(max-width: 670px)").matches){
+                document.getElementById("navBarDiv").style.display = "block";
+                var list_items = document.getElementsByClassName("navItem");
+                for (i = 0; i < list_items.length; i++){
+                    list_items[i].style.display = "block";
+                }
+                document.getElementById("openBtn").style.display = "none";
+            }
+            else{
+                document.getElementById("navBarDiv").style.display = "block";
+                document.getElementById("openBtn").style.display = "none";
+            }
+
+        }
+
+        function closeNav(){
+            document.getElementById("navBarDiv").style.display = "none";
+            document.getElementById("openBtn").style.display = "block";
+        }
+
+        function openLfigp(){
+            document.getElementById("uoftPop").style.display = "none";
+            document.getElementById("lfigpPop").style.display = "block";
+        }
+
+        function openUoft(){
+            document.getElementById("lfigpPop").style.display = "none";
+            document.getElementById("uoftPop").style.display = "block";
+        }
+    </script>
+</body>
+</html>

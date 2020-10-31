@@ -1,0 +1,116 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5DC;
+}
+
+#wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#logoDiv{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+#homeName{
+    margin: 0;
+    margin-right: 0;
+    width: 60%;
+    position: absolute;
+    right: 11%;
+}
+
+#homeLogo{
+    max-width: 60%;
+}
+
+@media screen and (min-width: 500px) {
+    #homeLogo{
+        max-width: 40%;
+    }
+}
+
+
+#homeAnchor{
+    text-decoration: none;
+    font-family: "Lucida Console", "Monaco", monospace;
+    color: black;
+}
+
+.openbtn {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #F5F5DC;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+.languageBtn{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    text-decoration: none;
+    font-family: "Lucida Console", "Monaco", monospace;
+    color: black;
+}
+
+.languageBtn a:hover{color:gray};
+.languageBtn a:visited{color:black;}
+
+@media screen and (min-width: 1200px) {
+    #homeLogo{
+        max-width: 30%;
+    }
+
+    #aboutMeAsset{
+        max-width: 40%;
+    }
+
+    .languageBtn{
+        right: 2%;
+        top: 1%;
+    }
+}
+
+.navBar{
+    margin-top: 1%;
+}
+
+.navBar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.3s;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.innerContent{
+    font-size: 20px;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: white;
+    margin-right: 2%;
+    box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.52);
+}
+
+#pageTitle{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.navBar a:hover{color: gray;};
+.navBar a:active{color: gray;};
+#homeAnchor a:visited{color: black;};
+#homeAnchor a:hover{color: gray;};
+#frButton a:hover{color: gray;};
+#frButton a:visited{color: black;};
